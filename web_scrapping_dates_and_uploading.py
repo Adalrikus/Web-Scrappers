@@ -52,7 +52,7 @@ def main():
     options.add_argument('--headless')
     driver = webdriver.Firefox(options=options)
 
-    for date_element in date_elements[:5]:
+    for date_element in date_elements:
         time.sleep(5)
         print(date_element.text)
         print("!Checking information!")
