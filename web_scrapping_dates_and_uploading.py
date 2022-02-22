@@ -61,6 +61,9 @@ def main():
             print("!Uploading content!")
             upload_content(driver, date_element, text)
             print("DONE")
+        else:
+            print("!WEB SITE ERROR: 500!")
+            print("!NO DATA WAS FOUND ABOUT" + date_element.text + "!")
 
     print("!Uploading is complete!")
     print("!Shutting down WebDriver!")
